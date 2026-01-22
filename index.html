@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="pl" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Karina Targosz | Pani od Zdrowia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --brand-teal: #3EB9A7;
+        --brand-teal-dark: #35a091;
+        --brand-teal-light: #f0fdfa;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #ffffff;
+        color: #1e293b;
+      }
+      h1, h2, h3, h4 {
+        font-family: 'Montserrat', sans-serif;
+      }
+      .brand-teal { color: var(--brand-teal); }
+      .bg-brand-teal { background-color: var(--brand-teal); }
+      
+      .service-card {
+        background-color: var(--brand-teal-light);
+        border: 1px solid rgba(62, 185, 167, 0.15);
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
+      
+      .service-card:hover {
+        background-color: #ffffff;
+        border-color: var(--brand-teal);
+        transform: translateY(-10px);
+        box-shadow: 0 25px 50px -12px rgba(62, 185, 167, 0.25);
+      }
+
+      .btn-primary {
+        background-color: var(--brand-teal);
+        transition: all 0.3s ease;
+      }
+
+      .btn-primary:hover {
+        background-color: var(--brand-teal-dark);
+        transform: translateY(-2px);
+        box-shadow: 0 10px 20px -5px rgba(62, 185, 167, 0.4);
+      }
+
+      .glass-nav {
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+      }
+      
+      ::selection {
+        background-color: var(--brand-teal);
+        color: white;
+      }
+
+      /* Custom animations */
+      @keyframes fade-in-up {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .animate-fade-in-up {
+        animation: fade-in-up 0.8s ease-out forwards;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="overflow-x-hidden">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

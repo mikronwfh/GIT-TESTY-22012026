@@ -1,0 +1,8 @@
+
+{
+  "name": "Mgr Karina Targosz - Pani od Zdrowia",
+  "description": "Profesjonalna witryna poświęcona zdrowiu i dietetyce prowadzona przez Mgr Karinę Targosz.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
