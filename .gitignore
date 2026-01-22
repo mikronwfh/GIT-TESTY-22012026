@@ -1,3 +1,13 @@
 node_modules/  
 dist/  
 build/ 
+
+# Pliki lokalne i poufne
+.env
+.env.local
+*.log
+
+# Pliki systemowe i edytorów
+.DS_Store
+.vscode/
+.idea/
